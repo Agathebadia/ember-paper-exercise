@@ -30,24 +30,30 @@ $primary: (
 }
 
 .site-nav {
+  width: 20vw;
   margin-right: 2vw;
   box-shadow: 5px 5px 6px rgba(0,0,0,0.3);
-  height: 100vh;
+  height: 100%;
 }
 
 .inline-components {
   display: flex;
 }
 
-.cards {
-  display: -webkit-inline-box;
-  md-card {
-    border-radius: 3px;
-    color: paper-color($primary, '50');
-    background-color: paper-color($primary, 'A400');
+.cards-container {
+  column-count: 3;
+  column-gap: 1em;
+  width: 75vw;
+  height: 100%;
+  .card {
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+    md-card {
+      //width: 100%;
+      border-radius: 3px;
+      color: paper-color($primary, '50');
+      background-color: paper-color($primary, 'A400');
+    }
   }
-}
-
-.md-card {
-  display: grid;
 }

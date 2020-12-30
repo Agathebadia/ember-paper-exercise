@@ -1,4 +1,4 @@
-<div class="cards">
+<div class="cards-container">
   <div class="card">
     <PaperCard as |card|>
       <card.title as |title|>
@@ -9,6 +9,46 @@
         {{paper-icon "accessibility"}}
       </card.title>
       <card.actions>
+        <PaperButton class='button'>Action 1</PaperButton>
+        <PaperButton class='button'>Action 2</PaperButton>
+      </card.actions>
+    </PaperCard>
+  </div>
+
+  <div class="card">
+    <PaperCard as |card|>
+      <card.title as |title|>
+        <title.text as |text|>
+          <text.headline>Card with block</text.headline>
+          <text.subhead>Extra large</text.subhead>
+        </title.text>
+      </card.title>
+      <card.content @class="layout-row layout-align-space-between">
+        <card.media @size="xl">
+          <div class="card-media"></div>
+        </card.media>
+        <card.actions @class="layout-column">
+          <PaperButton @iconButton={{true}}>{{paper-icon "favorite"}}</PaperButton>
+          <PaperButton @iconButton={{true}}>{{paper-icon "settings"}}</PaperButton>
+          <PaperButton @iconButton={{true}}>{{paper-icon "share"}}</PaperButton>
+        </card.actions>
+      </card.content>
+    </PaperCard>
+  </div>
+
+  <div class="card">
+    <PaperCard as |card|>
+      <card.title as |title|>
+        <title.text as |text|>
+          <text.headline>Card with image</text.headline>
+          <text.subhead>Small</text.subhead>
+        </title.text>
+        {{paper-icon "bookmarks"}}
+      </card.title>
+      <card.media @size="xl">
+        <div class="card-media"></div>
+      </card.media>
+      <card.actions>
         <PaperButton>Action 1</PaperButton>
         <PaperButton>Action 2</PaperButton>
       </card.actions>
@@ -19,10 +59,33 @@
     <PaperCard as |card|>
       <card.title as |title|>
         <title.text as |text|>
-          <text.headline>Card with image</text.headline>
-          <text.subhead>Large</text.subhead>
+          <text.headline>Card with block</text.headline>
+          <text.subhead>Extra large</text.subhead>
         </title.text>
-        {{paper-icon "accessible"}}
+      </card.title>
+      <card.content @class="layout-row layout-align-space-between">
+        <card.media @size="xl">
+          <div class="card-media"></div>
+        </card.media>
+        <card.actions @class="layout-column">
+          <PaperButton @iconButton={{true}}>{{paper-icon "favorite"}}</PaperButton>
+          <PaperButton @iconButton={{true}}>{{paper-icon "settings"}}</PaperButton>
+          <PaperButton @iconButton={{true}}>{{paper-icon "share"}}</PaperButton>
+        </card.actions>
+      </card.content>
+    </PaperCard>
+  </div>
+
+  <div class="card">
+    <PaperCard as |card|>
+      <card.title as |title|>
+        <title.text as |text|>
+          <text.headline>Card with block</text.headline>
+          <text.subhead>Medium</text.subhead>
+        </title.text>
+        <title.media @size="md">
+          <div class="card-media"></div>
+        </title.media>
       </card.title>
       <card.actions>
         <PaperButton>Action 1</PaperButton>
@@ -35,15 +98,22 @@
     <PaperCard as |card|>
       <card.title as |title|>
         <title.text as |text|>
-          <text.headline>Card with image</text.headline>
-          <text.subhead>Large</text.subhead>
+          <text.headline>Card with block</text.headline>
+          <text.subhead>Extra large</text.subhead>
         </title.text>
-        {{paper-icon "account-circle"}}
       </card.title>
-      <card.actions>
-        <PaperButton>Action 1</PaperButton>
-        <PaperButton>Action 2</PaperButton>
-      </card.actions>
+      <card.content @class="layout-row layout-align-space-between">
+        <card.media @size="xl">
+          <div class="card-media"></div>
+        </card.media>
+        <card.actions @class="layout-column">
+          <PaperButton @iconButton={{true}}>{{paper-icon "favorite"}}</PaperButton>
+          <PaperButton @iconButton={{true}}>{{paper-icon "settings"}}</PaperButton>
+          <PaperButton @iconButton={{true}}>{{paper-icon "share"}}</PaperButton>
+        </card.actions>
+      </card.content>
     </PaperCard>
   </div>
+
 </div>
+
