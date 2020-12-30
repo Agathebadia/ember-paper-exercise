@@ -1,0 +1,48 @@
+$primary: (
+    '50' : #e8e8f6,
+    '100' : #c5c6e9,
+    '200' : #9fa1da,
+    '300' : #797bcb,
+    '400' : #5c5ec0,
+    '500' : #3f42b5,
+    '600' : #393cae,
+    '700' : #3133a5,
+    '800' : #292b9d,
+    '900' : #1b1d8d,
+    'A100' : #c6c7ff,
+    'A200' : #9395ff,
+    'A400' : #6063ff,
+    'A700' : #474aff,
+    'contrast': #ffffff,
+  'contrastDefaultColor': black,
+  'contrastLightColors': ('500', '600', '700', '800', '900'),
+  'contrastStrongLightColors': ('500', '600', '700')
+);
+
+@import 'ember-paper';
+
+.primary-color {
+  background-color: paper-color($primary);
+}
+
+.flex {
+  flex: initial;
+}
+
+.site-nav {
+  margin-right: 2vw;
+  box-shadow: 5px 5px 6px rgba(0,0,0,0.3);
+  height: 100vh;
+}
+
+.inline-components {
+  display: flex;
+}
+
+.cards {
+  display: -webkit-inline-box;
+}
+
+.md-card {
+  display: grid;
+}

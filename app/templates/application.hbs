@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<div class="inline-components">
+  <PaperSidenavContainer @class="inner-sidenav">
+    <SideNav />
+  </PaperSidenavContainer>
 
-{{outlet}}
+  <div class="cards">
+    <Cards />
+  </div>
+</div>
