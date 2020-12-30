@@ -41,6 +41,11 @@ $primary: (
 
 .cards {
   display: -webkit-inline-box;
+  md-card {
+    border-radius: 3px;
+    color: paper-color($primary, '50');
+    background-color: paper-color($primary, 'A400');
+  }
 }
 
 .md-card {
