@@ -9,6 +9,6 @@ export default class GifModel extends Model {
     return get(this, 'images.original.url');
   });
   previewImageUrl = computed('images', function(){
-    return get(this, 'images.preview_gif.url') ? get(this, 'images.preview_gif.url') : get(this, 'imageUrl')
+    return get(this, 'images.fixed_width.url') ? get(this, 'images.fixed_width.url') : get(this, 'imageUrl')
   })
 }

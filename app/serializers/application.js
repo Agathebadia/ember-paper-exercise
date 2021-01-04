@@ -1,5 +1,5 @@
 import RESTSerializer from '@ember-data/serializer/rest';
-import {underscore} from "@ember/string";
+import { underscore } from "@ember/string";
 
 export default class ApplicationSerializer extends RESTSerializer {
   modelNameFromPayloadKey(payloadKey) {
@@ -10,7 +10,6 @@ export default class ApplicationSerializer extends RESTSerializer {
     }
   };
   keyForAttribute(attr) {
-    const newAttr = underscore(attr).toLowerCase();
-    return newAttr;
+    return underscore(attr);
   }
 }
