@@ -1,4 +1,4 @@
-<div class="cards-container">
+{{!-- <div class="cards-container">
   <div class="card">
     <PaperCard as |card|>
       <card.title as |title|>
@@ -214,7 +214,10 @@
     </PaperCard>
   </div>
 
-</div>
+</div> --}}
 
-
-
+{{#each @model as |gif|}}
+  <img src={{gif.previewImageUrl}}>
+  {{gif.title}}
+  {{gif.url}}
+{{/each}}
