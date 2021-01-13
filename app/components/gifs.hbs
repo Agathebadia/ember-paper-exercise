@@ -1,7 +1,6 @@
 DISPLAY GIFS
-{{log data}}
 {{#each @model as |gif|}}
-  <img src={{gif.previewImageUrl}}>
+  <img src="{{gif.previewImageUrl}}">
   {{gif.title}}
   {{gif.url}}
 {{/each}}
