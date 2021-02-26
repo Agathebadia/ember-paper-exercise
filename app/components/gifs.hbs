@@ -1,6 +1,7 @@
-DISPLAY GIFS
-{{#each @model as |gif|}}
-  <img src="{{gif.previewImageUrl}}">
-  {{gif.title}}
-  {{gif.url}}
-{{/each}}
+<div class="cards-container">
+  {{#each @model as |gif|}}
+    <img class="object-fit" src="{{gif.images.fixed_height.url}}">
+    <a href="{{gif.images.original.url}}">Original url</a>
+    {{gif.title}}
+  {{/each}}
+</div>

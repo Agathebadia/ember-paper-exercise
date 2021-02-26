@@ -40,6 +40,10 @@ $primary: (
   display: flex;
 }
 
+.object-fit {
+  object-fit: cover;
+}
+
 .cards-container {
   display: flex;
   flex-wrap: wrap;

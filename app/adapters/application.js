@@ -7,7 +7,7 @@ export default class ApplicationAdapter extends RESTAdapter {
   limit = 30;
   rating = 'g';
 
-  urlForFindAll(modelName, snapshot) {
+  urlForFindAll() {
     return `${this.host}/${this.namespace}?api_key=${this.api_key}&${this.limit}&${this.rating}`;
   }
 }
